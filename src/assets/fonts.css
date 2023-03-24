@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+/* font-family: 'Allerta Stencil', sans-serif; */
+
+@font-face {
+    font-family: 'Laviossa';
+    src: url('./fonts/laviossa-medium.otf');
+}
+
+@font-face {
+    font-family: 'Gotham-Pro';
+    src: url('./fonts//ofont.ru_Gotham\ Pro.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/* font-family: 'DM Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */

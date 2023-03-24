@@ -1,0 +1,137 @@
+.about {
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+    .blur-red {
+        top: -189px;
+        left: -265px;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-title {
+        font-family: "Laviossa";
+        font-size: 60px;
+        line-height: 117.2%;
+        margin-bottom: 20px;
+    }
+    &-text {
+        font-family: "Laviossa";
+        font-size: 30px;
+        line-height: 170%;
+        color: #eae9e9;
+    }
+    &-bottom {
+        position: absolute;
+        bottom: -68px;
+        right: 0px;
+        width: 490px;
+        height: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e0e12;
+        filter: blur(35px);
+        z-index: 1;
+    }
+    &-img {
+        position: relative;
+        p {
+            position: absolute;
+            bottom: -98px;
+            right: -65px;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 80px;
+            line-height: 117.2%;
+            font-family: "Laviossa";
+            text-shadow: -1px 2px 5px #ee053c;
+            color: #0e0e12;
+        }
+    }
+}
+
+.finger {
+    &-2 {
+        position: absolute;
+        width: 170px;
+        bottom: -50%;
+        right: 0;
+    }
+    &-5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .about {
+        &-wrapper > div {
+            width: 50%;
+        }
+        &-img {
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        &-wrapper {
+            flex-direction: column;
+            & > div {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &-title {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        &-text {
+            font-size: 22px;
+        }
+        &-img {
+            p {
+                bottom: -40px;
+                right: 0;
+                transform: translate(-50%, -50%);
+                font-size: 48px;
+            }
+        }
+    }
+    .finger {
+        &-2 {
+            width: 100px;
+            bottom: -30%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        &-text {
+            font-size: 16px;
+        }
+    }
+    .finger {
+        &-2 {
+            width: 70px;
+            bottom: -30%;
+        }
+    }
+}
