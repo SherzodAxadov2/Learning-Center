@@ -1,0 +1,75 @@
+.crtf {
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+}
+.crtf .blur-red {
+  left: -138px;
+  bottom: -232px;
+}
+.crtf .title-red {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.crtf-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.crtf-imgs {
+  width: 80%;
+  max-width: 80%;
+  display: flex;
+  gap: 50px;
+}
+.crtf-img {
+  width: 100%;
+}
+.crtf-item {
+  transform: translateY(150px);
+  cursor: pointer;
+}
+.crtf-item.selected {
+  transform: translateY(0);
+  position: relative;
+  transition: var(--transition);
+}
+.crtf-item.selected::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 2px;
+  background: #d31b1b;
+}
+
+@media (max-width: 1400px) {
+  .crtf-imgs {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .crtf-imgs {
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .crtf .title-red {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    z-index: 2;
+  }
+  .crtf-item {
+    transform: translateY(60px);
+  }
+  .crtf-item.selected::before {
+    width: 90%;
+    bottom: -15px;
+  }
+}/*# sourceMappingURL=certificate.css.map */

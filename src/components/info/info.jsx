@@ -10,7 +10,12 @@ const Info = () => {
         <div className="info-wrapper">
           <ul className="info-box">
             {info.map((info) => (
-              <li key={info.id} className="info-item">
+              <li
+                key={info.id}
+                className="info-item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+              >
                 <div className="info-img">
                   <img src={info.img} alt="img" />
                 </div>

@@ -11,7 +11,7 @@ const About = () => {
 
       <div className="container">
         <div className="about-wrapper">
-          <div className="about-des">
+          <div className="about-des" data-aos="fade-up" data-aos-duration="400">
             <div className="about-title">О НАС</div>
             <div className="about-text">
               Lorem ipsum dolor sit amet consectetur. Urna semper urna viverra
@@ -22,7 +22,8 @@ const About = () => {
               dictumst ullamcorper nulla.
             </div>
           </div>
-          <div className="about-img">
+
+          <div className="about-img" data-aos="fade-up" data-aos-duration="400">
             <img src={aboutImg} alt="img" />
             <p>О НАС</p>
             <div className="about-bottom"></div>

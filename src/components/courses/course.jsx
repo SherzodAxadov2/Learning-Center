@@ -4,7 +4,11 @@ import arrowRight from "../../assets/icons/arrow-right.png";
 
 const Course = ({ img, title, date, text }) => {
   return (
-    <li className="course-item">
+    <li
+      className="course-item"
+      data-aos="fade-up-right"
+      data-aos-duration="500"
+    >
       <div className="course-img">
         <img src={img} alt="" />
       </div>

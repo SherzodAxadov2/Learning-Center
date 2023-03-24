@@ -1,7 +1,24 @@
-import React from "react";
-import { About, Courses, Home, Info, Mentors, Navbar } from "./components/";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import {
+  About,
+  Certificate,
+  Contact,
+  Courses,
+  Footer,
+  Home,
+  Info,
+  Mentors,
+  Navbar,
+  News,
+  Statistic,
+} from "./components/";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <header>
@@ -13,7 +30,14 @@ const App = () => {
         <Info />
         <Courses />
         <Mentors />
+        <Statistic />
+        <News />
+        <Certificate />
+        <Contact />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

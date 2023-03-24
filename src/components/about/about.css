@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   position: relative;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .about .blur-red {
   top: -189px;
@@ -63,6 +63,21 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.finger-3 {
+  position: absolute;
+  top: -43px;
+  right: 0;
+}
+.finger-4 {
+  position: absolute;
+  left: 0;
+  top: -225px;
+}
+.finger-6 {
+  position: absolute;
+  right: 0;
+  top: -216px;
 }
 
 @media (max-width: 1400px) {
